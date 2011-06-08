@@ -20,6 +20,7 @@
 ;; Thanks to Travis Jeffery for ido-mode and fixes to the minibuffer-prompt to fit in with the rest of the theme
 ;;
 
+(require 'color-theme)
 (defun color-theme-twilight ()
   "Color theme by Marcus Crafter, based off the TextMate Twilight theme, created 2008-04-18"
   (interactive)
@@ -44,6 +45,16 @@
 	  (font-lock-preprocessor-face ((t (:foreground "Aquamarine"))))
 	  (font-lock-reference-face ((t (:foreground "SlateBlue"))))
 
+          ;; Perl
+          (cperl-array-face ((t (:foreground "#7587A6"))))
+          (cperl-hash-face ((t (:foreground "#7587A6"))))
+
+	  ;; Enhanced-Ruby-Mode
+	  (ruby-string-delimiter-face  ((t (:foreground "#5A6340"))))
+	  (ruby-regexp-delimiter-face ((t (:foreground "orange"))))
+	  (ruby-heredoc-delimiter-face ((t (:foreground "#9B859D"))))
+	  (ruby-op-face ((t (:foreground "#CDA869"))))
+
 	  (font-lock-regexp-grouping-backslash ((t (:foreground "#E9C062"))))
 	  (font-lock-regexp-grouping-construct ((t (:foreground "red"))))
 
@@ -53,15 +64,32 @@
 	  (ido-only-match ((t (:foreground "#8F9D6A"))))
 	  (mumamo-background-chunk-submode ((t (:background "#222222")))) 
 
+          ;; Bookmark+
+          (bmkp-heading ((t (:foreground "#9B703F"))))
+          (bmkp-bookmark-file ((t (:foreground "#8F9D6A"))))
+          (bmkp-D-mark ((t (:foreground "DarkOrange"))))
+          (bmkp-t-mark ((t (:foreground "#7587A6"))))
+          (bmkp-url ((t (:foreground "DarkGoldenrod"))))
+          (bmkp-remote-file ((t (:foreground "#CDA869"))))
+          (bmkp-local-directory ((t (:foreground "#CF6A4C"))))
+          (bmkp-local-file-without-region ((t (:foreground "#8F9D6A"))))
+          (bmkp-local-file-with-region ((t (:foreground "#8F9D6A"))))
+
+	  ;; (linum ((t (:background "#DCDCDC" :foreground "#757575"))))
+	  (linum ((t (:background "#333333" :foreground "#757575"))))
+	  (hl-line ((t (:background "#212121"))))  
+	  (yas/field-highlight-face ((t (:background "#27292A"))))
+
 	  (font-lock-string-face ((t (:foreground "#8F9D6A"))))
-	  (font-lock-type-face ((t (:foreground "#9B703F"))))
+	  (font-lock-type-face ((t (:foreground "#7587A6"))))
 	  (font-lock-variable-name-face ((t (:foreground "#7587A6"))))
-	  (font-lock-warning-face ((t (:background "#EE799F" :foreground "red"))))
+	  ;; (font-lock-warning-face ((t (:background "#EE799F" :foreground "red"))))
+	  (font-lock-warning-face ((t (:foreground "firebrick"))))
 	  (gui-element ((t (:background "#D4D0C8" :foreground "black"))))
 	  (region ((t (:background "#27292A"))))
 	  (mode-line ((t (:background "grey75" :foreground "black"))))
 	  (highlight ((t (:background "#111111"))))
-	  (highline-face ((t (:background "SeaGreen"))))
+	  (highline-face ((t (:background "Gray20"))))
 	  (left-margin ((t (nil))))
 	  (text-cursor ((t (:background "yellow" :foreground "black"))))
 	  (toolbar ((t (nil))))
